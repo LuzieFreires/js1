@@ -18,40 +18,43 @@
         </header>
 
 
-        <section class="section personal">
-            <h2 class="psection">Personal Details </h2>
-                <div class="flex-parent">
-                    <div class="p-flex-container">
-                        <h3>Contact Information</h3>
-                        <p><b>Mobile:</b> +63 9123 456789</p>
-                        <p><b>Email:</b> luzieann.freires@students.isatu.edu.ph</p>
-                    </div>
-
-                    <div class="p-flex-container">
-                        <h3>Address</h3>
-                        <p>Brgy. 123, Pinky Subdivision, Iloilo City, Philippines</p>
-                    </div>
-
-                    <div class="p-flex-container">
-                        <h3>Professional Profiles</h3> 
-                            <a href="https://github.com/LuzieFreires" target="_blank" class="plogo">
-                                <img src="images\github.png" alt="GitHub">
-                                <span>Github</span>
-                                </a>
-                            <br>
-                            <a href="https://www.linkedin.com/in/luzie-freires" target="_blank" class="plogo">
-                                <img src="images\linkedin.png" alt="LinkedIn">
-                                <span>LinkedIn</span>
-                                </a>
-                    </div>
+        <section id="personal" class="section">
+            <div class="header-row">
+                <h2 class="psection">Personal Details </h2>
+                <button class="toggle-btn">Open</button>
                 </div>
-                <div class="button-container">
-                    <button type="button" class="pbutton" onclick="alert('Next time..')">Know more..</button>
-                </div>
+                    <div class="flex-parent">
+                        <div class="p-flex-container">
+                            <h3>Contact Information</h3>
+                            <p><b>Mobile:</b> +63 9123 456789</p>
+                            <p><b>Email:</b> luzieann.freires@students.isatu.edu.ph</p>
+                        </div>
+
+                        <div class="p-flex-container">
+                            <h3>Address</h3>
+                            <p>Brgy. 123, Pinky Subdivision, Iloilo City, Philippines</p>
+                        </div>
+
+                        <div class="p-flex-container">
+                            <h3>Professional Profiles</h3> 
+                                <a href="https://github.com/LuzieFreires" target="_blank" class="plogo">
+                                    <img src="images\github.png" alt="GitHub">
+                                    <span>Github</span>
+                                    </a>
+                                <br>
+                                <a href="https://www.linkedin.com/in/luzie-freires" target="_blank" class="plogo">
+                                    <img src="images\linkedin.png" alt="LinkedIn">
+                                    <span>LinkedIn</span>
+                                    </a>
+                        </div>
+                    </div>
         </section>
 
-        <section class="section education">
-            <h2 class="esection">Education</h2>
+        <section id="education" class="section">
+            <div class="header-row">
+                <h2 class="esection">Education</h2>
+                <button class="toggle-btn">Open</button>
+            </div>
                 <h3>Graduate of Bachelor of Science in Information Technology</h3>
                 <p>(2026–2027)</p>
             
@@ -83,16 +86,17 @@
                         <p>(2026–2027)</p>
                     </div>
             </div>
-                <div class="button-container">
-                    <button type="button" class="ebutton" onclick="alert('Next time..')">Learn more..</button>
-                </div>
         </section>
 
-       <section class="section skills">
-            <h2 class="ssection">Skills</h2>
+       <section id="skills" class="section">
+            <div class="header-row">
+                <h2 class="ssection">Skills</h2>
+                <button class="toggle-btn">Open</button>
+            </div>
+
                 <div class="skills-grid">
                     <div class="s-flex-container">
-                        <img src="images\css.png" alt="CSS" class="skillslogo">
+                        <img src="images/css.png" alt="CSS" class="skillslogo">
                     <div>
                         <h3>CSS</h3>
                         <p>Styling web pages with layouts, animations, and responsive design.</p>
@@ -100,7 +104,7 @@
                 </div>
 
                     <div class="s-flex-container">
-                        <img src="images\js.png" alt="JavaScript" class="skillslogo">
+                        <img src="images/js.png" alt="JavaScript" class="skillslogo">
                     <div>
                         <h3>JavaScript</h3>
                         <p>Creating interactive web applications and dynamic content.</p>
@@ -108,7 +112,7 @@
                 </div>
 
                     <div class="s-flex-container">
-                        <img src="images\python.png" alt="Python" class="skillslogo">
+                        <img src="images/python.png" alt="Python" class="skillslogo">
                     <div>
                         <h3>Python</h3>
                         <p>Building scripts, data analysis, and backend development.</p>
@@ -116,16 +120,12 @@
                 </div>
 
                     <div class="s-flex-container">
-                        <img src="images\html.png" alt="HTML" class="skillslogo">
+                        <img src="images/html.png" alt="HTML" class="skillslogo">
                     <div>
                         <h3>HTML</h3>
                         <p>Structuring web content with semantic markup.</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="button-container">
-                <button type="button" class="sbutton" onclick="alert('Next time..')">See more..</button>
             </div>
         </section>
 
@@ -141,7 +141,9 @@
                     <img src="images\fb.png" alt="Facebook"></a>
             </footer>
 
-        </main>
         </div>
+        </main>
+
+        <script src="script.js"></script>
     </body> 
 </html>

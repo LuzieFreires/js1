@@ -403,3 +403,49 @@ footer {
   0%, 100% { transform: scale(1); }
   50%      { transform: scale(1.2); }
 }
+
+/* JavaScript to toggle sections */
+/* Header row: title left, button right */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5em 0;
+}
+
+/* Style the toggle button */
+.toggle-btn {
+  background: none;             
+  border: none;                 
+  color: #4a90e2;               /* link-like blue */
+  font-size: 0.95em;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;                  
+  margin-left: 10px;
+  text-decoration: underline;   
+  transition: color 0.2s;
+}
+
+.toggle-btn:hover {
+  color: #357ab7;            
+}
+
+/* Hide content by default */
+.section .flex-parent,
+.section .skills-grid,
+.section p,
+.section h3,
+.section h4 {
+  display: none;
+}
+
+/* Show when active */
+.section.active .flex-parent,
+.section.active .skills-grid,
+.section.active p,
+.section.active h3,
+.section.active h4 {
+  display: block;
+}
