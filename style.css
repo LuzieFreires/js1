@@ -404,32 +404,47 @@ footer {
   50%      { transform: scale(1.2); }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* JavaScript to toggle sections */
 /* Header row: title left, button right */
 .header-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: 12px 20px;
   cursor: pointer;
-  padding: 0.5em 0;
+  background: inherit;   
+  border-radius: 15px 15px 0 0;
+  box-sizing: border-box;
 }
 
 /* Style the toggle button */
 .toggle-btn {
-  background: none;             
-  border: none;                 
-  color: #4a90e2;               /* link-like blue */
+  background: none;
+  border: none;
+  color: #333;           
   font-size: 0.95em;
   font-weight: 600;
   cursor: pointer;
-  padding: 0;                  
-  margin-left: 10px;
-  text-decoration: underline;   
+  text-decoration: underline;
   transition: color 0.2s;
 }
 
 .toggle-btn:hover {
-  color: #357ab7;            
+  color: #000;
 }
 
 /* Hide content by default */
