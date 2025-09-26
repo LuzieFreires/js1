@@ -21,9 +21,12 @@ body {
 
 .p-flex-container {
   flex: 1;                 
-  min-width: 200px;            
-  padding: 15px;
-  border-radius: 10px;
+  min-width: 150px;            
+  padding: 25px;
+  margin: 20px;
+  border: none;
+  border-radius: 20px;
+  background: #f9ccdf;
   height: fit-content;
   justify-content: space-evenly;
 }
@@ -77,45 +80,6 @@ body {
   line-height: 1.4;
 }
 
-.button-container {
-  text-align: center;
-}
-
-.pbutton {
-  background-color: #ffcce1; 
-  border-radius: 10px;
-  color: rgb(166, 31, 103);
-  padding: 15px 32px;
-  margin: 25px;
-  text-align: center;
-  font-size: 16px;
-  border: none;
-}
-
-.ebutton {
-  background-color: #b0ddff; 
-  border-radius: 10px;
-  color: #1e5666; 
-  padding: 15px 32px;
-  margin: 25px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  border: none;
-}
-
-.sbutton {
-  background-color: #d5b3db; 
-  border-radius: 10px;
-  color: rgb(133, 52, 134);
-  margin: 25px;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  border: none;
-}
-
 .profile {
     height: 130px;
     width: 130px;
@@ -163,32 +127,28 @@ body {
   object-fit: contain;
 }
 
-.psection{
-  border-style: solid;
+#personal .header-row {
   background-color: pink;
-  border: 20px;
-  border-radius: 15px;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  padding: 0px 25px;
+  margin: 20px 0; 
 }
 
-.esection {
+#education .header-row {
   background-color: rgb(170, 226, 243);
-  border: 20px;
-  border-radius: 15px;
-  text-align: center;
-  margin: 20px;
-  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  padding: 0px 25px;
+  margin: 20px 0;
 }
 
-.ssection {
+#skills .header-row {
   background-color: rgb(221, 184, 227);
-  border: 20px;
-  border-radius: 15px;
-  text-align: center;
-  margin: 20px;
-  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  padding: 0px 25px;
+  margin: 20px 0;
 }
 
 h1 {
@@ -225,6 +185,7 @@ p {
   object-fit: contain;
   vertical-align: middle;
 }
+
 footer {
   display: flex;
   justify-content: center; 
@@ -410,21 +371,7 @@ footer {
   50%      { transform: scale(1.2); }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* JavaScript to toggle sections */
-/* Header row: title left, button right */
 .header-row {
   display: flex;
   justify-content: space-between;
@@ -437,20 +384,15 @@ footer {
   box-sizing: border-box;
 }
 
-/* Style the toggle button */
 .toggle-btn {
   background: none;
   border: none;
   color: #333;           
-  font-size: 0.95em;
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
   text-decoration: underline;
   transition: color 0.2s;
-}
-
-.toggle-btn:hover {
-  color: #000;
 }
 
 /* Hide content by default */
@@ -462,7 +404,6 @@ footer {
   display: none;
 }
 
-/* Show when active */
 .section.active .flex-parent,
 .section.active .skills-grid,
 .section.active p,
