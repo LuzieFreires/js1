@@ -219,6 +219,12 @@ p {
   font-size: 20px;
 }
 
+.toggle-btn img.icon-eye {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  vertical-align: middle;
+}
 footer {
   display: flex;
   justify-content: center; 

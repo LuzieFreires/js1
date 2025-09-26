@@ -9,17 +9,42 @@ document.addEventListener('DOMContentLoaded', function () {
       event.stopPropagation();
       const isOpen = section.classList.contains('active');
 
+      // Close all other sections
       sections.forEach(s => {
         s.classList.remove('active');
         const otherBtn = s.querySelector('.toggle-btn');
-        if (otherBtn) otherBtn.textContent = 'Open';
+        if (otherBtn) {
+          if (s.id === "personal") {
+            otherBtn.textContent = "Open";
+          } else if (s.id === "education") {
+            otherBtn.textContent = "[+]";
+          } else if (s.id === "skills") {
+            const img = otherBtn.querySelector("img");
+            if (img) img.src = "images/openeyes.png";
+          }
+        }
       });
 
+      // Toggle the clicked section
       if (!isOpen) {
         section.classList.add('active');
-        btn.textContent = 'Close';
+        if (section.id === "personal") {
+          btn.textContent = "Close";
+        } else if (section.id === "education") {
+          btn.textContent = "[-]";
+        } else if (section.id === "skills") {
+          const img = btn.querySelector("img");
+          if (img) img.src = "images/closeeyes.png";
+        }
       } else {
-        btn.textContent = 'Open';
+        if (section.id === "personal") {
+          btn.textContent = "Open";
+        } else if (section.id === "education") {
+          btn.textContent = "[+]";
+        } else if (section.id === "skills") {
+          const img = btn.querySelector("img");
+          if (img) img.src = "images/closeeyes.png";
+        }
       }
     });
   });
