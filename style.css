@@ -371,7 +371,7 @@ footer {
   50%      { transform: scale(1.2); }
 }
 
-/* JavaScript to toggle sections */
+/* JavaScript*/
 .header-row {
   display: flex;
   justify-content: space-between;
@@ -391,11 +391,8 @@ footer {
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  text-decoration: underline;
-  transition: color 0.2s;
 }
 
-/* Hide content by default */
 .section .flex-parent,
 .section .skills-grid,
 .section p,
